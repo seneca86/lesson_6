@@ -129,5 +129,44 @@ for i in alphabet:
 
 ### `break`, `continue`, and `else`
 
-`for` loops feature `break`, `continue`, and `else` in a similar fashion to `while` loops. Let's illustrate this with a few examples:
+`for` loops feature `break`, `continue`, and `else` in a similar fashion to `while` loops. Let's illustrate this with a example:
 
+```python
+presidents = ['Washington',
+              'Adams',
+              'Jefferson',
+              'Madison',
+              'Monroe',
+              'Quincy',
+              'Jackson',
+              'Van Buren',
+              'Harrison',
+              'Tyler',
+              'Polk',
+              'Taylor']
+
+for p in presidents:
+    if p.startswith('J'):
+        continue
+    elif p.startswith('H'):
+        print('Found a president starting with H')
+        break
+    print(p)
+else:
+    print('Did not encounter any president starting with H')
+```
+
+### Number sequences with `range()`
+
+The `range()` function allows to create a _iterable object_, i.e. a stream of numbers that is not stored in memory. Its syntax is similar to slices: `range(start, stop, step)`, with the last value created right before `stop`. This is easier to illustrate with a few examples.
+
+```python
+for i in range(3):
+    print(i)
+for i in range(2,5):
+    print(i)
+for i in range(2, 10, 2):
+    print(i)
+for i in range(3, -1, -1):
+    print(i)
+```

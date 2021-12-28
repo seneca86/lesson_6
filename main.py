@@ -71,3 +71,38 @@ for i in alphabet:
     print(i)
 
 # %%
+presidents = ['Washington',
+              'Adams',
+              'Jefferson',
+              'Madison',
+              'Monroe',
+              'Quincy',
+              'Jackson',
+              'Van Buren',
+              'Harrison',
+              'Tyler',
+              'Polk',
+              'Taylor']
+
+for p in presidents:
+    if p.startswith('J'):
+        continue
+    elif p.startswith('H'):
+        print('Found a president starting with H')
+        break
+    print(p)
+else:
+    print('Did not encounter any president starting with H')
+# %%
+for i in range(3):
+    print(i)
+# %%
+for i in range(2,5):
+    print(i)
+# %%
+for i in range(2, 10, 2):
+    print(i)
+# %%
+for i in range(3, -1, -1):
+    print(i)
+# %%
