@@ -69,7 +69,7 @@ while True:
     print(f'{fib=}')
 ```
 
-### optional `else``
+### optional `else`
 
 `while` loops can have an `else` clause afterwards that evaluates once the `while` loop completes unless the reason is a `break`. Let's compare these two examples:
 
